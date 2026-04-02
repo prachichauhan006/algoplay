@@ -1,4 +1,5 @@
 import BubbleSort from "./BubbleSort"
+import SelectionSort from "./SelectionSort"
 import { useState } from "react"
 
 
@@ -6,7 +7,7 @@ function App() {
   const [page, setPage] = useState("home")
 
   if (page === "bubble") return <BubbleSort onBack={() => setPage("home")} />
-  if (page === "selection") return <div><h2>Selection Sort</h2><button onClick={() => setPage("home")}>Back</button></div>
+  if (page === "selection") return <SelectionSort onBack={() => setPage("home")} />
   if (page === "insertion") return <div><h2>Insertion Sort</h2><button onClick={() => setPage("home")}>Back</button></div>
   if (page === "binary") return <div><h2>Binary Search</h2><button onClick={() => setPage("home")}>Back</button></div>
 
