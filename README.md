@@ -1,1 +1,3 @@
 ALGOPLAY....
+
+searching and shorting 
